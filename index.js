@@ -32,6 +32,7 @@ let UserId = await noblox.getIdFromUsername(args[1])
 let information = await noblox.getPlayerInfo({userId: UserId})
 message.channel.send(information)
 }
+startApp()
 })
 
 
