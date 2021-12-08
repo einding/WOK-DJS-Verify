@@ -35,7 +35,7 @@ return
 });
 const random1 = Math.floor(Math.random() * 7)
 console.log(random1)
-msg.channel.send('Hi ${message.content}! To verify it is you, please update the **ABOUT** section of your profile to following: 
+msg.channel.send('Hi ${message.content}! To verify it is you, please update the **ABOUT** section of your profile to following:')
 let blurb = await noblox.getBlurb({userId: UserId})
 
 msg.channel.send('Please check your ROBLOX messages!')
