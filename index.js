@@ -22,7 +22,7 @@ errors: ['time']
 }) 
 .then(message => {
 message = message.first()
-if(message === 'devAkaan'){
+if(message.content === 'devAkaan'){
 message.channel.send('Got you!')
 }
 })
