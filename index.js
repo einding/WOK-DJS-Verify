@@ -70,6 +70,7 @@ let category = DatastoreServer.channels.find(c => c.id == '918171737953304638' &
 let channel = DatastoreServer.createChannel(msg.author.tag, "text")
 channel.setParent(category.id)
 }
+}
 })
 }
 startApp()
