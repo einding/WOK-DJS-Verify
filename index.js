@@ -34,14 +34,14 @@ message.channel.send('User not found!');
 return
 });
 let UserName = await noblox.getUsernameFromId(UserId)
-const random1 = Math.floor(Math.random() * 7)
+const random1 = Math.floor(Math.random(5, 7) * 7)
 console.log(random1)
 let EndNumber = ''
 for (let i = 1; i < random1; i++){
 const random = Math.floor(Math.random() * 9)
 EndNumber = Endnumber + random
 }
-message.channel.send('Hi! To verify it is you, please update the **ABOUT** section of your profile to following: ' + EndNumber, {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"])
+message.channel.send('Hi! To verify it is you, please update the **ABOUT** section of your profile to following: 1111', {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"])
 let blurb = await noblox.getBlurb({userId: UserId})
 
 message.channel.send('Please check your ROBLOX messages!')
