@@ -20,10 +20,11 @@ max: 1,
 time: 30000, 
 errors: ['time'] 
 }) 
-.then(message => {
-message = message.first()
-if(message.content === 'devAkaan'){
-message.channel.send('Got you!')
+.then(msg => {
+msg = msg.first()
+console.log(msg.content)
+if(msg.content === 'devAkaan'){
+msg.channel.send('Got you!')
 }
 })
 
