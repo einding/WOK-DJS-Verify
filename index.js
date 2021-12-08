@@ -30,10 +30,10 @@ const currentUser = await noblox.setCookie('_|WARNING:-DO-NOT-SHARE-THIS.--Shari
 console.log(`Logged in as ${currentUser.UserName} [${currentUser.UserID}]`)
 let UserId = await noblox.getIdFromUsername(message.content)
 let blurb = await noblox.getBlurb({userId: UserId})
-.catch(collected => { 
-message.channel.send('User not found...'); 
-});
+if(blurb !== undefined){
 msg.channel.send(blurb)
+}else{message.channel.send('User not found...')}
+
 msg.channel.send('Please check your ROBLOX messages!')
 }
 startApp()
