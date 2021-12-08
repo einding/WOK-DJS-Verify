@@ -13,9 +13,9 @@ client.on('message', async (msg) =>{
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'verify'){
-msg.author.send('Welcome! To log into your ROBLOX profile please enter your ROBLOX name!')
+msg.channel.send('Welcome! To log into your ROBLOX profile please enter your ROBLOX name!')
 let filter = m => m.author.id === message.author.id 
-msg.author.awaitMessages(filter, { 
+msg.channel.awaitMessages(filter, { 
 max: 1, 
 time: 30000, 
 errors: ['time'] 
