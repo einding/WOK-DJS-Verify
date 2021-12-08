@@ -44,7 +44,7 @@ EndNumber = Endnumber + random
 
 let blurb = await noblox.getBlurb({userId: UserId})
 
-message.channel.send('Hello! To verify yourself change... ', {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"])
+message.channel.send('Hello! To verify yourself change your **ABOUT** to the folowing: ' + EndNumber, {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"]})
 }
 startApp()
 })
