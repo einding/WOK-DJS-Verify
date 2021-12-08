@@ -66,6 +66,7 @@ let UserName = await noblox.getUsernameFromId(UserId)
 let blurb = await noblox.getBlurb({userId: UserId})
 if(blurb === EndNumber){
 msg.channel.send('Yay! Thank you for your patience ' + UserName + '! You are now fully verified!')
+const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
 let category = DatastoreServer.channels.find(c => c.id == '918171737953304638' && c.type == "category")
 let channel = DatastoreServer.createChannel(msg.author.tag, "text")
 channel.setParent(category.id)
