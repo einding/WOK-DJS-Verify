@@ -38,7 +38,7 @@ const random1 = Math.floor(Math.random() * 7)
 console.log(random1)
 let EndNumber = ''
 const link = 'https://www.roblox.com/profile/' + UserId
-for (let i = 1; i < args.length; i++){
+for (let i = 1; i < random1; i++){
 const random = Math.floor(Math.random() * 9)
 EndNumber = Endnumber + random
 }
