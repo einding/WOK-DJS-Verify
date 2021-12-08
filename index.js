@@ -14,17 +14,17 @@ const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'verify'){
 msg.channel.send('Welcome! To log into your ROBLOX profile please enter your ROBLOX name!')
-let filter = m => m.author.id === message.author.id 
+let filter = m => m.author.id === msg.author.id 
 msg.channel.awaitMessages(filter, { 
 max: 1, 
 time: 30000, 
 errors: ['time'] 
 }) 
-.then(msg => {
-msg = msg.first()
+.then(message => {
+message = message.first()
 console.log(msg.content)
-if(msg.content === 'devAkaan'){
-msg.channel.send('Got you!')
+if(message.content === 'devAkaan'){
+message.channel.send('Got you!')
 }
 })
 
