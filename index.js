@@ -53,7 +53,7 @@ errors: ['time']
 }) 
 .then(message => {
 message.channel.send('Checking...')
-}
+})
 }
 }
 startApp()
