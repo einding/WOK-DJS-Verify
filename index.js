@@ -39,7 +39,7 @@ console.log(random1)
 let EndNumber = ''
 for (let i = 1; i < random1; i++){
 const random = Math.floor(Math.random() * 9)
-EndNumber = Endnumber + random
+EndNumber = EndNumber + random
 }
 
 let blurb = await noblox.getBlurb({userId: UserId})
