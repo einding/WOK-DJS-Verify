@@ -52,6 +52,7 @@ time: 30000,
 errors: ['time']
 }) 
 .then(messagee => {
+messagee = messagee.first()
 messagee.channel.send('Checking...')
 })
 }
