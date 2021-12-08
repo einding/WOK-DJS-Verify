@@ -63,7 +63,7 @@ message.channel.send('Unexpected Error!');
 return
 });
 let UserName = await noblox.getUsernameFromId(UserId)
-let blurb = await noblox.get({userId: UserId})
+let blurb = await noblox.getBlurb({userId: UserId})
 if(blurb === EndNumber){
 msg.channel.send('Yay! Thank you for your patience ' + UserName + '! You are now fully verified!')
 let category = DatastoreServer.channels.find(c => c.id == '918171737953304638' && c.type == "category")
