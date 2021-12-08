@@ -24,6 +24,7 @@ errors: ['time']
 message = message.first()
 if(message === 'devAkaan'){
 message.channel.send('Got you!')
+}
 })
 
 
