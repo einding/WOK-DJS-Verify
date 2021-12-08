@@ -58,9 +58,7 @@ message.channel.send('Checking...')
 })
 startApp()
 }
-
-
-} 
+})
 });
 
 client.login('OTE4MTczMTQxODkxNzAyODA0.YbDZXw.8ib82WpwgPXP6uBjotLAcQ5xkT4')
