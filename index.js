@@ -41,10 +41,10 @@ for (let i = 1; i < random1; i++){
 const random = Math.floor(Math.random() * 9)
 EndNumber = Endnumber + random
 }
-message.channel.send('Hi! To verify it is you, please update the **ABOUT** section of your profile to following: 1111', {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"])
+
 let blurb = await noblox.getBlurb({userId: UserId})
 
-message.channel.send('Please check your ROBLOX messages!')
+message.channel.send('Hello! To verify yourself change... ', {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"])
 }
 startApp()
 })
