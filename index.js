@@ -18,7 +18,7 @@ msg.channel.send('Welcome! To log into your ROBLOX profile please enter your ROB
 let filter = m => m.author.id === msg.author.id 
 msg.channel.awaitMessages(filter, { 
 max: 1, 
-time: 30000, 
+time: 300000, 
 errors: ['time'] 
 }) 
 .then(message => {
@@ -48,7 +48,7 @@ message.channel.send('Hello! To verify yourself change your **ABOUT** to the fol
 let filter = m => m.author.id === msg.author.id && m.content.toLowerCase() === "done"
 msg.channel.awaitMessages(filter, { 
 max: 1, 
-time: 30000, 
+time: 300000, 
 errors: ['time']
 }) 
 .then(messagee => {
