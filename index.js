@@ -44,7 +44,17 @@ EndNumber = EndNumber + random
 
 let blurb = await noblox.getBlurb({userId: UserId})
 
-message.channel.send('Hello! To verify yourself change your **ABOUT** to the folowing: ' + EndNumber, {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"]})
+message.channel.send('Hello! To verify yourself change your **ABOUT** to the folowing: ' + EndNumber + '\nOnce you are done send a message with "**DONE**" in this chat.', {files: ["https://media.discordapp.net/attachments/848206920179515412/918218469642747945/Screenshot_20211208-201204_Chrome.jpg"]})
+let filter = m => m.author.id === msg.author.id && m.content.toLowerCase() === "done"
+message.channel.awaitMessages(filter, { 
+max: 1, 
+time: 30000, 
+errors: ['time']
+}) 
+.then(message => {
+message.channel.send('Checking...')
+}
+}
 }
 startApp()
 })
