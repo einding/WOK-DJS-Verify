@@ -57,7 +57,7 @@ message.channel.send('Checking...')
 }
 })
 startApp()
-})
+}
 
 
 } 
