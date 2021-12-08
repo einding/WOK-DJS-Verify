@@ -71,6 +71,7 @@ let channel = DatastoreServer.createChannel(msg.author.tag, "text")
 channel.setParent(category.id)
 }
 }
+startApp()
 })
 }
 startApp()
