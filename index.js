@@ -55,7 +55,7 @@ errors: ['time']
 message.channel.send('Checking...')
 })
 }
-})
+)
 startApp()
 }
 })
