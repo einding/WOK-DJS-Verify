@@ -32,7 +32,8 @@ let UserId = await noblox.getIdFromUsername(message.content)
 .catch(collected => { 
 message.channel.send('User not found!'); 
 });
-let blurb = await noblox.getBlurb({userId: UserId})msg.channel.send(blurb)
+let blurb = await noblox.getBlurb({userId: UserId})
+msg.channel.send(blurb)
 
 msg.channel.send('Please check your ROBLOX messages!')
 }
