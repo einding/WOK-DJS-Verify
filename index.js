@@ -34,10 +34,10 @@ message.channel.send('User not found!');
 return
 });
 let UserName = await noblox.getUsernameFromId(UserId)
-const random1 = Math.floor(Math.random(5, 7) * 7)
+const random1 = Math.floor(Math.random() * 2 + 5)
 console.log(random1)
 let EndNumber = ''
-for (let i = 1; i < random1; i++){
+for (let i = 0; i < random1; i++){
 const random = Math.floor(Math.random() * 9)
 EndNumber = EndNumber + random
 }
