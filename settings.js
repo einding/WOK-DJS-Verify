@@ -25,11 +25,11 @@ message = message.first()
 const args = message.content.trim().split(/ +/g);
 let SettingsC = ''
 for (let i = 0; i < args.length; i++){
-SettingsC = SettingsC + '|' + args[i]
+SettingsC = SettingsC + '%' + args[i]
 }
 console.log(SettingsC)
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
-let arguments = DatastoreServer.channels.cache.find('918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)).trim().split('$')
+let arguments = DatastoreServer.channels.cache.find('918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)).split('$')
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
 DatastoreServer.channels.cache.find('918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)).edit(aftersettings)
 })
