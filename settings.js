@@ -11,6 +11,7 @@ time: 300000,
 errors: ['time']
 }) 
 .then(messagee => {
+messagee = messagee.first()
 if(messagee.content.toLowerCase() === 'nickname'){
 msg.channel.send('Alright! Please enter your nickname options. \nAdd ``RBLXN`` for the Roblox-Name, ``RBLXI`` for the Roblox-Id, ``DT`` for the Discord-Tag or just write something beautiful!')
 let filter = m => m.author.id === msg.author.id
@@ -20,6 +21,7 @@ time: 300000,
 errors: ['time']
 }) 
 .then(message => {
+message = message.first()
 const args = message.content.trim().split(/ +/g);
 let SettingsC = ''
 for (let i = 0; i < args.length; i++){
