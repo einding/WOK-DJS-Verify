@@ -16,7 +16,6 @@ const command = args[0].toLowerCase()
 if(command === 'verify'){
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
 const Channel = await DatastoreServer.channels.cache.find(c => c.name === msg.author.id)
-k
 if(Channel === undefined){
 msg.channel.send('Welcome! To log into your ROBLOX profile please enter your ROBLOX name!')
 let filter = m => m.author.id === msg.author.id 
