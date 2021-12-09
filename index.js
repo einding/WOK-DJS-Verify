@@ -68,7 +68,7 @@ if(blurb === EndNumber){
 msg.channel.send('Yay! Thank you for your patience ' + UserName + '! You are now fully verified!')
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
 let category = DatastoreServer.channels.cache.find(c => c.id == '918171695410454599' && c.type == "category")
-let channel = DatastoreServer.channels.create(msg.author.id, parent: '918171695410454599')
+let channel = DatastoreServer.channels.create(msg.author.id, {parent: '918171695410454599'})
 }
 }
 startAppp()
