@@ -13,7 +13,13 @@ client.user.setActivity(client.guilds.length + ' guild(s)!', { type: 'WATCHING' 
 client.on('message', async (msg) =>{
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
-if(command === 'verify'){
+if(command === 'settings'){
+var reqw = require('./settings.js'); 
+reqw.on('data', function(d) { 
+console.log(d); 
+});
+}
+if(command === 'verify' || command === 'update' || command === 'getroles' || command === 'getrole'){
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
 const Channel = await DatastoreServer.channels.cache.find(c => c.name === msg.author.id)
 if(Channel === undefined){
