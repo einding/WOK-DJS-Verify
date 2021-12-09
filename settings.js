@@ -31,6 +31,7 @@ console.log(SettingsC)
 let messagetobeedited = ''
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
 for (let i = 0; i < DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages.length; i++){
+Console.log(i)
 if(DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages[i] === msg.guild.id){
 console.log('Found')
 messagetobeedited = DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages[i].id
