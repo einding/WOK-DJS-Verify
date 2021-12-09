@@ -15,8 +15,7 @@ const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'settings'){
 var reqw = require('./settings.js'); 
-reqw.on('data', function(d) { 
-console.log(d); 
+reqw.execute(client, message, args, prefix);
 });
 }
 if(command === 'verify' || command === 'update' || command === 'getroles' || command === 'getrole'){
