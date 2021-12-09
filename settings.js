@@ -39,7 +39,7 @@ console.log(Channel.name)
 const mesage = Channel.messages.cache.find(m => m.content.startsWith(msg.guild.id))
 let e = mesage.id
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
-Channel.messages.cache.find(me => me.id === e ).edit(aftersettings)
+Channel.messages.fetch(e).edit(aftersettings)
 })
 }
 })
