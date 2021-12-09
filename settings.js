@@ -1,16 +1,9 @@
 module.exports = { 
-listaccts: function() { 
-events.EventEmitter.call(this); 
-} 
-}  
-exports.listaccts.prototype.listme = function() { 
-thisList = this; 
-let req = https.request(requestOptions, function(res) { 
-res.on('data', function() { 
-console.log('started')
-}); 
-res.on('end', function(d) { 
-console.log('ended')
-}); 
-}); 
-}
+name: 'settings', 
+// any other details you might like, such as: 
+description: 'See all the commands!', 
+execute(client, message, args, prefix) { 
+// the actual function 
+message.channel.send('settings')
+}, 
+};
