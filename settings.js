@@ -32,9 +32,9 @@ SettingsC = SettingsC + args[i]
 }
 }
 console.log(SettingsC)
-const DatastoreServeer = client.guilds.cache.find(g => g.id === '918046883459522560')
-console.log(DatastoreServeer.name)
-const Channel = DataStoreServeer.channels.cache.find(c => c.id === '918385244695064647')
+const Datastore = client.guilds.cache.find(g => g.id === '918046883459522560')
+console.log(Datastore.name)
+const Channel = Datastore.channels.cache.find(c => c.id === '918385244695064647')
 console.log(Channel.name)
 const mesage = Channel.messages.cache.find(m => m.content.startsWith(msg.guild.id))
 console.log(message.id)
