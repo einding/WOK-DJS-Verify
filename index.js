@@ -15,7 +15,7 @@ const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'verify'){
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
-const Channel = DatastoreServer.channels.cache.get(c => c.name === msg.author.id)
+const Channel = await DatastoreServer.channels.cache.get(c => c.name === msg.author.id)
 .then({
 msg.channel.send('Welcome back ' + Channel.messages[2] + '! You will be verified soon!'
 }
