@@ -29,7 +29,7 @@ SettingsC = SettingsC + '%' + args[i]
 }
 console.log(SettingsC)
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
-let arguments = DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)).split('%')
+let arguments = DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)).content.split('%')
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
 DatastoreServer.channels.cache.find('918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)).edit(aftersettings)
 })
