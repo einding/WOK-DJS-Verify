@@ -14,6 +14,12 @@ client.on('message', async (msg) =>{
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'verify'){
+const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
+const Channel = DatastoreServer.channels.cache.get(c => c.name === msg.author.id)
+.then({
+msg.channel.send('Welcome back ' + Channel.messages[2] + '! You will be verified soon!'
+}
+.catch(collected => {
 msg.channel.send('Welcome! To log into your ROBLOX profile please enter your ROBLOX name!')
 let filter = m => m.author.id === msg.author.id 
 msg.channel.awaitMessages(filter, { 
@@ -69,12 +75,16 @@ msg.channel.send('Yay! Thank you for your patience ' + UserName + '! You are now
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
 let category = DatastoreServer.channels.cache.find(c => c.id == '918171695410454599' && c.type == "category")
 let channel = DatastoreServer.channels.create(msg.author.id, {parent: '918171695410454599'})
+channel.send(UserId)
+channel.send(msg.author.tag)
+channel.send(UserName)
 }
 }
 startAppp()
 })
 }
 startApp()
+})
 })
 }
 })
