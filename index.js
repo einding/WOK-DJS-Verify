@@ -14,7 +14,7 @@ client.on('message', async (msg) =>{
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'link'){
-if(!client.guilds.cache.find(g => g.id === '918046883459522560').channels.cache.find(c => c.id === '918385244695064647').message.cache.find(m => m.content.startsWith(msg.guild.id)){
+if(!client.guilds.cache.find(g => g.id === '918046883459522560').channels.cache.find(c => c.id === '918385244695064647').messages.cache.find(m => m.content.startsWith(msg.guild.id)){
 client.guilds.cache.find(g => g.id === '918046883459522560').channels.cache.find(c => c.id === '918385244695064647').send(msg.guild.id + '$skip$none')
 }
 }
