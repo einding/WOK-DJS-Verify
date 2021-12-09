@@ -16,7 +16,6 @@ const command = args[0].toLowerCase()
 if(command === 'settings'){
 var reqw = require('./settings.js'); 
 reqw.execute(client, message, args, prefix);
-});
 }
 if(command === 'verify' || command === 'update' || command === 'getroles' || command === 'getrole'){
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
