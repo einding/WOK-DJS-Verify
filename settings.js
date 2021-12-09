@@ -25,21 +25,20 @@ message = message.first()
 const args = message.content.trim().split(/ +/g);
 let SettingsC = ''
 for (let i = 0; i < args.length; i++){
+if(i !== 0){
 SettingsC = SettingsC + '%' + args[i]
+}else{
+SettingsC = SettingsC + args[i]
+}
 }
 console.log(SettingsC)
-let messagetobeedited = ''
-const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
-for (let i = 0; i < DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages.length; i++){
-Console.log(i)
-if(DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages[i] === msg.guild.id){
-console.log('Found')
-messagetobeedited = DatastoreServer.channels.cache.find(c => c.id === '918385244695064647').messages[i].id
-}
-}
-let arguments = msg.guild.channels.cache.find(c => c.id === '918385244695064647').messages.cache.find(m => m.id === messagetobeedited).content.split('%')
+const DatastoreServeer = client.guilds.cache.find(g => g.id === '918046883459522560')
+console.log(DatastoreServeer.name)
+const Channel = DataStoreServeer.channels.cache.find(c => c.id === '918385244695064647')
+console.log(Channel.name)
+const mesage = Channel.messages.cache.find(m => m.content.startsWith(msg.guild.id))
+console.log(message.id)
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
-DatastoreServer.channels.cache.find('918385244695064647').messages.cache.find(m => m.id === messagetobeedited).edit(aftersettings)
 })
 }
 })
