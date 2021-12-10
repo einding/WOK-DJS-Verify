@@ -36,10 +36,9 @@ const Datastore = client.guilds.cache.find(g => g.id === '918046883459522560')
 console.log(Datastore.name)
 const Channel = Datastore.channels.cache.find(c => c.id === '918385244695064647')
 console.log(Channel.name)
-const mesage = Channel.messages.cache.find(m => m.content.startsWith(msg.guild.id))
-let e = mesage.id
+const mesage = Channel.messages.cache.find(m => m.content.startsWith(msg.guild.id)).id
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
-await Channel.messages.fetch(e).edit(aftersettings)
+await Channel.messages.fetch(mesage).edit(aftersettings)
 })
 }
 })
