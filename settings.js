@@ -53,7 +53,7 @@ mesage = messages[i].id
 
 console.log(mesage)
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
-const NowReally = await Channel.messages.fetch(mesage)
+const NowReally = await channel.messages.fetch(mesage)
 NowReally.edit(aftersettings)
 }
 settingss()
