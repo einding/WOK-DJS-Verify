@@ -43,11 +43,9 @@ channel.messages.fetch({ limit: 100 }).then(messages => {
 console.log(`Received ${messages.size} messages`); 
 let mesage = ''
 //Iterate through the messages here with the variable "messages". 
-messages.forEach(message => 
-if(message.content.startsWith(msg.guild.id){
-mesage = message.id
-) 
+messages.forEach(message => console.log(message.content)
 })
+
 console.log(mesage)
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
 await Channel.messages.fetch(mesage).edit(aftersettings)
