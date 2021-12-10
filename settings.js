@@ -39,6 +39,7 @@ const Channel = Datastore.channels.cache.find(c => c.id === '918385244695064647'
 console.log(Channel.name)
 let mesage = ''
 for (let i = 0; i < Channel.messages.length; i++){
+console.log(i)
 const args = Channel.messages[i].content.split('$');
 if(args[0] === msg.guild.id){
 mesage = args[0]
