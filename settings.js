@@ -35,17 +35,19 @@ console.log(SettingsC)
 async function settingss () {
 const Datastore = client.guilds.cache.find(g => g.id === '918046883459522560')
 console.log(Datastore.name)
-const Channel = Datastore.channels.cache.find(c => c.id === '918385244695064647')
-console.log(Channel.name)
-console.log(Channel.messages.length)
+const channel = client.channels.cache.get("918385244695064647");
+
+console.log(channel.name)
+console.log(channel.messages.length)
+channel.messages.fetch({ limit: 100 }).then(messages => { 
+console.log(`Received ${messages.size} messages`); 
 let mesage = ''
-for (let i = 0; i < Channel.messages.length; i++){
-console.log(i)
-const args = Channel.messages[i].content.split('$');
-if(args[0] === msg.guild.id){
-mesage = args[0]
-}
-}
+//Iterate through the messages here with the variable "messages". 
+messages.forEach(message => 
+if(message.content.startsWith(msg.guild.id){
+mesage = message.id
+) 
+})
 console.log(mesage)
 let aftersettings = args[1] + '$' + SettingsC + '$' + args[3]
 await Channel.messages.fetch(mesage).edit(aftersettings)
