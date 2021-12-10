@@ -37,6 +37,7 @@ const Datastore = client.guilds.cache.find(g => g.id === '918046883459522560')
 console.log(Datastore.name)
 const Channel = Datastore.channels.cache.find(c => c.id === '918385244695064647')
 console.log(Channel.name)
+console.log(Channel.messages.length)
 let mesage = ''
 for (let i = 0; i < Channel.messages.length; i++){
 console.log(i)
