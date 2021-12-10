@@ -2,7 +2,7 @@ module.exports = {
 name: 'settings', 
 // any other details you might like, such as: 
 description: 'See all the commands!', 
-execute(client, msg, args) { 
+execute async (client, msg, args) { 
 msg.channel.send('**Settings** \nPlease select one of the options below and send it in this chat. \n**NICKNAME**\n**LINKS**')
 let filter = m => m.author.id === msg.author.id
 msg.channel.awaitMessages(filter, { 
