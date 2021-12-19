@@ -125,8 +125,6 @@ startAppp()
         
     }
 }
-let aftersettings = messsagesplit[0] + '$' + SettingsC + '$' + messsagesplit[2]
-messsage.edit(aftersettings)
 }})
 })
 }
