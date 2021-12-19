@@ -104,7 +104,7 @@ if(messsage.content.startsWith(msg.guild.id)){
 console.log(messsage.content)
 const messsagesplite = messsage.content.split('$')
 const messsagesplit = messsagesplite[1].split('%')
-for(let i = 0; < messsagesplit.length; i++){
+for(let i = 0; i < messsagesplit.length; i++){
 const Nicknameoptions = messsagesplit[i].split('')
 const WordNeeded = 'rblxn'
 for(let i = 0; i < Nicknameoptions.length; i++){
