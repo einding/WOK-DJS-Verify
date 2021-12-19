@@ -164,7 +164,7 @@ startAppp()
 console.log(nickname)
 }
 }}
-})
+}
 }
 }
 }
