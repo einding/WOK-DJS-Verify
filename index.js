@@ -119,9 +119,10 @@ message.channel.send('Unexpected Error!');
 return
 });
 let UserName = await noblox.getUsernameFromId(UserId)
-let blurb = await noblox.getBlurb({userId: UserId})
+console.log(UserName)
 }
 startAppp()
+        return
     }else{
         
     }
