@@ -126,7 +126,6 @@ msg.channel.send(UserName)
 }
 check()
 })
-console.log(UserName)
 }
 startAppp()
         return
