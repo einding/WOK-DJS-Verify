@@ -161,8 +161,8 @@ startAppp()
 
         nickname = nickname + Nicknameoptions[i]
     }
-}
 console.log(nickname)
+}
 }})
 })
 }
