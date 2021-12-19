@@ -120,7 +120,7 @@ console.log(messsage.content)
 async function check () {
 let UserName = await noblox.getUsernameFromId(messsage.content)
 .catch(collected => { 
-message.channel.send('Unexpected Error!'); 
+msg.channel.send('Unexpected Error!'); 
 return
 });
 nickname = nickname + UserName
