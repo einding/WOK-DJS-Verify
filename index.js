@@ -102,7 +102,7 @@ messages.forEach(messsage => {
 if(messsage.content.startsWith(msg.guild.id)){
 console.log(messsage.content)
 const messsagesplite = messsage.content.split('$')
-const messsagesplit = messsagesplite.split('%')
+const messsagesplit = messsagesplite[1].split('%')
 const Nicknameoptions = messsagesplit[1].split('')
 const WordNeeded = 'RBLXN'
 let Word = ''
