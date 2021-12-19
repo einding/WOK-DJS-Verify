@@ -42,10 +42,10 @@ console.log(channel.messages.length)
 channel.messages.fetch({ limit: 100 }).then(messages => { 
 console.log(`Received ${messages.size} messages`); 
 //Iterate through the messages here with the variable "messages". 
-messages.forEach(messsage => (
+messages.forEach(messsage => {
 if(messsage.content.startsWith(msg.guild.id){
 console.log(messsage.content)
-}))
+}})
 for(let i = 0; i < messages.size; i++){
 if 
 (messages[i].content.startsWith() === msg.guild.id){
