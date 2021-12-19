@@ -116,11 +116,15 @@ console.log(`Logged in as ${currentUser.UserName} [${currentUser.UserID}]`)
     Channel.messages.fetch({ limit: 100 }).then(messages => { 
 messages.forEach(messsage => {
 console.log(messsage.content)
+async function check () {
 let UserName = await noblox.getUsernameFromId(messsage.content)
 .catch(collected => { 
 message.channel.send('Unexpected Error!'); 
 return
 });
+msg.channel.send(UserName)
+}
+check()
 })
 console.log(UserName)
 }
