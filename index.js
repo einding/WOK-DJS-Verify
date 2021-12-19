@@ -107,6 +107,7 @@ const Nicknameoptions = messsagesplit[1].split('')
 const WordNeeded = 'RBLXN'
 let Word = ''
 for(let i = 0; i < Nicknameoptions.length; i++){
+    console.log(Nicknameoptions[i])
     if(Nicknameoptions[i].toLowerCase() === 'r' && Nicknameoptions[i+1].toLowerCase() === 'b' && Nicknameoptions[i+2].toLowerCase() === 'l' && Nicknameoptions[i+3].toLowerCase() === 'x' && Nicknameoptions[i].toLowerCase() === 'n'){
         console.log('RBLXN')
 async function startAppp () { 
