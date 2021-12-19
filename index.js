@@ -121,7 +121,6 @@ async function check () {
 let UserName = await noblox.getUsernameFromId(messsage.content)
 .catch(collected => { 
 msg.channel.send('Unexpected Error!'); 
-return
 });
 nickname = nickname + UserName
 }
@@ -145,7 +144,6 @@ async function check () {
 let UserID = await noblox.getUsernameFromId(messsage.content)
 .catch(collected => { 
 message.channel.send('Unexpected Error!'); 
-return
 });
 nickname = nickname + messsage.content
 }
@@ -154,7 +152,6 @@ check()
 })
 }
 startAppp()
-        return
     }else{
 
 
