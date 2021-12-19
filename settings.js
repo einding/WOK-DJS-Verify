@@ -40,7 +40,7 @@ channel.messages.fetch({ limit: 100 }).then(messages => {
 messages.forEach(messsage => {
 if(messsage.content.startsWith(msg.guild.id)){
 console.log(messsage.content)
-const messsagesplit = messsage.split('$')
+const messsagesplit = messsage.content.split('$')
 let aftersettings = messsagesplit[0] + '$' + SettingsC + '$' + messsagesplit[2]
 messsage.edit(aftersettings)
 }})
