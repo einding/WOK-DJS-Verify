@@ -163,7 +163,7 @@ startAppp()
     }
 console.log(nickname)
 }
-}})
+}}
 })
 }
 }
