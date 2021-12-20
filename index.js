@@ -114,8 +114,8 @@ for(let i = 0; i < Nicknameoptions.length; i++){
     console.log(Nicknameoptions[i])
 for(let t = 0; t < ignore.length; t++){
 if(ignore[t] === Nicknameoptions[i].toLowerCase()){
-return
-}
+console.log('Not logged')
+}else{
 if(Nicknameoptions.length - i > 4){
 console.log('5 remain')
     if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
@@ -175,6 +175,7 @@ console.log(nickname)
     }
 }
 }}
+}
 }
 }
 })
