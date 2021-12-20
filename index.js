@@ -106,7 +106,7 @@ const messsagesplit = messsagesplite[1].split('%')
 for(let i = 0; i < messsagesplit.length; i++){
 let nickname = ''
 let ignore = [
-
+'noNe'
 ]
 const Nicknameoptions = messsagesplit[i].split('')
 const WordNeeded = 'rblxn'
