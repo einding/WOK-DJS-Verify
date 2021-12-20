@@ -109,6 +109,7 @@ const Nicknameoptions = messsagesplit[i].split('')
 const WordNeeded = 'rblxn'
 for(let i = 0; i < Nicknameoptions.length; i++){
     console.log(Nicknameoptions[i])
+if(Nicknameoptions.length >= 5){
     if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
 if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
         console.log('RBLXN')
@@ -151,6 +152,10 @@ check()
 }
 startAppp()
     }else{
+        nickname = nickname + Nicknameoptions[i]
+console.log(nickname)
+    }
+}else{
         nickname = nickname + Nicknameoptions[i]
 console.log(nickname)
     }
