@@ -131,7 +131,6 @@ nickname = nickname + UserName
 check()
 });
 })
-}
 if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
 console.log('RBLXI')
 async function startAppp () { 
@@ -150,6 +149,7 @@ nickname = nickname + messsage.content
 check()
 });
 })
+}
 }
 }
 startAppp()
