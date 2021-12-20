@@ -176,9 +176,9 @@ console.log(nickname)
 }
 }}
 }
-})
-})
 }
+})
+})
 }
 }
 })
