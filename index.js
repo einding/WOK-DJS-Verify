@@ -113,7 +113,7 @@ startApp()
      const WordNeeded = 'rblxn'
      for(let i = 0; i < Nicknameoptions.length; i++){
       let ignore = [
-       'noNe'
+       -1,
       ]
       for(let t = 0; t < ignore.length; t++){
        if(ignore[t] === i){
