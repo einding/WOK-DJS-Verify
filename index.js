@@ -18,8 +18,8 @@ for (let i = 0; i < handeledMessages.length; i++){
 if(handeledMessages[i] === msg.id){
 return
 }
-msg.channel.send("Responding")
 }
+msg.channel.send("Responding")
 handeledMessages.push(msg.id)
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
