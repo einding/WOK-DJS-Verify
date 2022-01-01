@@ -105,13 +105,12 @@ const messsagesplite = messsage.content.split('$')
 const messsagesplit = messsagesplite[1].split('%')
 for(let i = 0; i < messsagesplit.length; i++){
 let nickname = ''
-let ignore = [
-'noNe'
-]
 const Nicknameoptions = messsagesplit[i].split('')
 const WordNeeded = 'rblxn'
 for(let i = 0; i < Nicknameoptions.length; i++){
-    console.log(Nicknameoptions[i])
+let ignore = [
+'noNe'
+]
 for(let t = 0; t < ignore.length; t++){
 if(ignore[t] === Nicknameoptions[i].toLowerCase()){
 console.log('Not logged')
@@ -159,6 +158,7 @@ let UserName = await noblox.getUsernameFromId(messsage.content)
 msg.channel.send('Unexpected Error!'); 
 });
 nickname = nickname + messsage.content
+console.log(nickname)
 }
 check()
 });
@@ -167,7 +167,6 @@ check()
 startAppp()
     }else{
         nickname = nickname + Nicknameoptions[i]
-console.log(nickname)
     }
 }else{
         nickname = nickname + Nicknameoptions[i]
