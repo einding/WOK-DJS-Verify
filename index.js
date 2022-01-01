@@ -116,7 +116,6 @@ startApp()
        -1,
       ]
       for(let t = 0; t < ignore.length; t++){
-          console.log(ignore.length)
        if(ignore[t] === i){
         //console.log("Yeahno")
        }else{
@@ -145,6 +144,8 @@ startApp()
            })
           }
           startAppp()
+          console.log(ignore.length)
+          return
          }
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
           //console.log("RBLXI")
