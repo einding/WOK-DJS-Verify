@@ -116,7 +116,7 @@ startApp()
        if(Nicknameoptions[i] !== undefined && Nicknameoptions[i] !== " "){
        if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
         if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
-         //console.log('RBLXN')
+         console.log('RBLXN')
          delete Nicknameoptions[i]
          delete Nicknameoptions[i+1]
          delete Nicknameoptions[i+2]
@@ -140,7 +140,7 @@ startApp()
          startAppp()
        }         
        if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
-       //console.log("RBLXI")
+       console.log("RBLXI")
        ignore.push(i)
        ignore.push(i+1)
        ignore.push(i+2)
