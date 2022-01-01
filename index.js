@@ -116,13 +116,14 @@ startApp()
        -1,
       ]
       for(let t = 0; t < ignore.length; t++){
+          console.log(t)
        if(ignore[t] === i){
-        console.log("Yeahno")
+        \\console.log("Yeahno")
        }else{
        if(Nicknameoptions.length - i > 4){
         if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
-          console.log('RBLXN')
+          \\console.log('RBLXN')
           ignore.push(i)
           ignore.push(i+1)
           ignore.push(i+2)
@@ -146,7 +147,7 @@ startApp()
           startAppp()
          }
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
-          console.log("RBLXI")
+          \\console.log("RBLXI")
           ignore.push(i)
           ignore.push(i+1)
           ignore.push(i+2)
