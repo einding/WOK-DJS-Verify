@@ -21,7 +21,6 @@ return
 handeledMessages.push(msg.id)
 }
 }
-}
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'link'){
