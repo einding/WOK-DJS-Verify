@@ -113,6 +113,7 @@ startApp()
      const WordNeeded = 'rblxn'
      for(let i = 0; i < Nicknameoptions.length; i++){
       if(Nicknameoptions.length - i > 4){
+       if(Nicknameoptions[i] !== undefined && Nicknameoptions[i] !== " "){
        if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
         if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
          //console.log('RBLXN')
@@ -160,6 +161,7 @@ startApp()
          });
         })
        }
+      }
        startAppp()
      }else{
       nickname = nickname + Nicknameoptions[i]
