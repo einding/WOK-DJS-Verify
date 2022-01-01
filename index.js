@@ -139,6 +139,7 @@ startApp()
                msg.channel.send('Unexpected Error!'); 
               });
               nickname = nickname + UserName
+              console.log(UserName)
              }
              check()
             });
@@ -146,6 +147,7 @@ startApp()
           }
           startAppp()
           console.log(ignore[1])
+          console.log(i)
           return
          }
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
@@ -173,7 +175,7 @@ startApp()
           startAppp()
          }
         }else{
-        nickname = nickname + Nicknameoptions[i]
+         nickname = nickname + Nicknameoptions[i]
         }
        }else{
         nickname = nickname + Nicknameoptions[i]
