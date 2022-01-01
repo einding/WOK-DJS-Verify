@@ -19,7 +19,6 @@ if(handeledMessages[i] === msg.id){
 return
 }
 }
-msg.channel.send("Responding")
 handeledMessages.push(msg.id)
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
@@ -124,6 +123,7 @@ if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nickn
 console.log('Deez')
 if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
  console.log('RBLXN')
+msg.channel.send("Responding")
  ignore.push(i)
  ignore.push(i+1)
  ignore.push(i+2)
