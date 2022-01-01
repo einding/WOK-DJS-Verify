@@ -137,12 +137,8 @@ startApp()
           })
          }
          startAppp()
-         console.log(ignore.length)
-        for(let r = 0; r < ignore.length; r++){
-         console.log(ignore[r])
-        }
-       return
-       }         if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
+       }         
+       if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
        //console.log("RBLXI")
        ignore.push(i)
        ignore.push(i+1)
