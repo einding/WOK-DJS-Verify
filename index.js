@@ -100,7 +100,6 @@ const channel = client.channels.cache.get("918385244695064647");
 channel.messages.fetch({ limit: 100 }).then(messages => { 
 messages.forEach(messsage => {
 if(messsage.content.startsWith(msg.guild.id)){
-console.log(messsage.content)
 const messsagesplite = messsage.content.split('$')
 const messsagesplit = messsagesplite[1].split('%')
 for(let i = 0; i < messsagesplit.length; i++){
@@ -131,7 +130,6 @@ const currentUser = await noblox.setCookie('_|WARNING:-DO-NOT-SHARE-THIS.--Shari
 console.log(`Logged in as ${currentUser.UserName} [${currentUser.UserID}]`)
     Channel.messages.fetch({ limit: 100 }).then(messages => { 
 messages.forEach(messsage => {
-console.log(messsage.content)
 async function check () {
 let UserName = await noblox.getUsernameFromId(messsage.content)
 .catch(collected => { 
@@ -151,7 +149,6 @@ const currentUser = await noblox.setCookie('_|WARNING:-DO-NOT-SHARE-THIS.--Shari
 console.log(`Logged in as ${currentUser.UserName} [${currentUser.UserID}]`)
     Channel.messages.fetch({ limit: 100 }).then(messages => { 
 messages.forEach(messsage => {
-console.log(messsage.content)
 async function check () {
 let UserName = await noblox.getUsernameFromId(messsage.content)
 .catch(collected => { 
@@ -170,7 +167,6 @@ startAppp()
     }
 }else{
         nickname = nickname + Nicknameoptions[i]
-console.log(nickname)
     }
 }
 }}
