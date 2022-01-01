@@ -121,7 +121,6 @@ startApp()
        }else{
        if(Nicknameoptions.length - i > 4){
         if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
-         console.log('Deez')
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
           console.log('RBLXN')
           ignore.push(i)
@@ -139,19 +138,15 @@ startApp()
                msg.channel.send('Unexpected Error!'); 
               });
               nickname = nickname + UserName
-              console.log(UserName)
              }
              check()
             });
            })
           }
           startAppp()
-          console.log(ignore[1])
-          console.log(i)
-          return
          }
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
-          console.log('RBLXI')
+          console.log("RBLXI")
           ignore.push(i)
           ignore.push(i+1)
           ignore.push(i+2)
