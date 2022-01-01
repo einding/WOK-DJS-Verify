@@ -4,6 +4,9 @@ const Trelloo = require('trello');
 const client = new Discord.Client();
 const config = require('./config.json')
 const DatastoreServer = client.guilds.cache.find(g => g.id === '918046883459522560')
+let handeledMessages = [
+
+]
 
 client.on('ready', () => {
 client.user.setActivity(client.guilds.length + ' guild(s)!', { type: 'WATCHING' });
@@ -11,6 +14,14 @@ client.user.setActivity(client.guilds.length + ' guild(s)!', { type: 'WATCHING' 
 })
 
 client.on('message', async (msg) =>{
+for (let i = 0; i < handeledMessages.length; i++){
+if(handeledMessages[i] === msg.id){
+return
+}else{
+handeledMessages.push(msg.id)
+}
+}
+}
 const args = msg.content.slice(1).trim().split(/ +/g);
 const command = args[0].toLowerCase()
 if(command === 'link'){
