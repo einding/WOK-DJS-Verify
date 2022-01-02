@@ -133,7 +133,7 @@ startApp()
              async function check () {
               let UserName = await noblox.getUsernameFromId(messsage.content)
               .catch(collected => { 
-               message.channel.send('User not found!');
+               msg.channel.send('User not found!');
               });
               if(UserName !== undefined){
                nickname = nickname + UserName
