@@ -17,5 +17,6 @@
     "snekfetch": "^4.0.4",
     "trello": "^0.10.0",
     "ytdl": "^1.4.1"
+    "firebase-admin": "^9.9.0",
   }
 }
