@@ -105,7 +105,7 @@ startApp()
  channel.messages.fetch({ limit: 100 }).then(messages => { 
   messages.forEach(messsage => {
    if(messsage.content.startsWith(msg.guild.id)){
-    let nickname = ''
+    let nickname = ""
     const messsagesplite = messsage.content.split('$')
     const messsagesplit = messsagesplite[1].split('%')
     for(let i = 0; i < messsagesplit.length; i++){
