@@ -178,7 +178,7 @@ startApp()
        }
       }
      }
-     console.log(nickname)
+     console.log(nickname + " NICKNAMEHERE")
     }
    })
   })
