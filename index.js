@@ -116,8 +116,8 @@ startApp()
      const WordNeeded = 'rblxn'
      for(let i = 0; i < Nicknameoptions.length; i++){
       if(Nicknameoptions.length - i > 4){
-       console.log(Nicknameoptions[i])
        if(Nicknameoptions[i] !== undefined && Nicknameoptions[i] !== " "){
+        console.log(Nicknameoptions[i])
         if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === WordNeeded || Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
          if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxn'){
           console.log('RBLXN')
@@ -132,17 +132,17 @@ startApp()
             messages.forEach(messsage => {
              async function check () {
               let UserName = await noblox.getUsernameFromId(messsage.content)
-               .catch(collected => { 
-                msg.channel.send('Unexpected Error!'); 
-               });
+              if(UserName !== undefined){
                nickname = nickname + UserName
+               console.log(UserName)
               }
-              check()
-             });
-            })
-           }
-           startAppp()
+             }
+             check()
+            });
+           })
           }
+          startAppp()
+         }
           
           if(Nicknameoptions[i] !== undefined && Nicknameoptions[i] !== " "){
            if(Nicknameoptions[i].toLowerCase() + Nicknameoptions[i+1].toLowerCase() + Nicknameoptions[i+2].toLowerCase() + Nicknameoptions[i+3].toLowerCase() + Nicknameoptions[i+4].toLowerCase() === 'rblxi'){
